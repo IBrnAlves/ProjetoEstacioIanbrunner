@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> StreamingEstacio </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+
+    
+    <section class="container principal">
+       <div class="container__caixa">
+            <h1 class="container__titulo">Eleve sua experiência de streaming a novas alturas com o combo + <br>
+            Ofertas exclusivas para que você se apronfunde nas suas histórias favoritas sem afundar o bolso!</h1>    
+            <img src="imagens/ComboEstacio.png" class="container__imagem" alt="O combo de Streaming Estácio">
+            <a href="https://estacio.br/" class="container__botao" target="_blank">Aproveite: só 12x de R$ 50,00!</a>
+            <a href="https://estacio.br/" class="container__botao botao__segundario" target="_blank">Opte apenas pelo combo Estácio</a>
+        </div>
+    </section>
+
+    <section class="container secundario">
+        
+        <img src="imagens/Choose_Your_Entertainment_02.jpg" alt="" class="secundario__imagem">
+        <div class="container__descricao">
+            <h2 class="descricao__titulo">Curta do seu modo</h2>
+            <p class="descricao__texto">Maximize sua experiência na imponente tela da TV 
+                ou leve a diversão para onde quiser com tablet, laptop, celular e mais. 
+                Nossa coleção de filmes e séries continua crescendo sem parar</p>
+        </div>
+    </section>
+
+    <section class="container secundario">
+        <div class="container__descricao descricao2">
+            <p class="descricao__texto">Experimente o exclusivo Combo+ Estácio, onde o entretenimento é levado a outro nível! 
+            Com uma vasta seleção de filmes e séries, além de muito mais, oferecemos acesso ilimitado 
+            a uma diversidade de gêneros cinematográficos. Prepare-se para explorar desde emocionantes 
+            aventuras de ação até intrigantes tramas de suspense, romances apaixonantes e horrores de arrepiar.
+            Tudo isso disponível para que você e sua família possam desfrutar de momentos inesquecíveis 
+            juntos. Com o Combo+ Estácio, sua casa se transforma no melhor cinema, proporcionando 
+            diversão e entretenimento para todos. Não perca a chance de adquira nessa experiência 
+            cinematográfica única!</p>
+            <a href="https://estacio.br/" class="container__botao secundario__botao" >Opte apenas pelo combo Estácio</a>
+        </div>
+        <img src="imagens/Choose_Your_Entertainment_02.jpg" class="secundario__imagem imagem2">
+    </section>
+
+
+    <section class="dispositivos">
+        <h2 class="dispositivos__titulo">Disponível nos seus dispositivos favoritos</h2>
+            <ul class="dispositivos__lista">
+                <li>
+                    <img src="imagens/tv.png" alt="Ícone da televisão">
+                    <h3 class="lista__item">TV</h3> 
+                </li>
+                <li>
+                    <img src="imagens/computador.png" alt="Ícone de computador">
+                    <h3 class="lista__item">Computador</h3>
+                </li>
+                <li>
+                    <img src="imagens/celular.png" alt="Ícone de celular">
+                    <h3 class="lista__item">Celular</h3>
+                </li>
+            </ul>
+    </section>
+
+      
+</body>
+</html>
+
+:root{
+    
+    --branco-principal: #ffffff;
+    --cinza-segundario: #dad9d9;
+    --botao-vermelho: #ff5151;
+    --cor-de-fundo: #01040c;
+    --fonte-principal: 'Andika';
+    
+}
+
+body{
+
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.principal {
+
+    background-image: url("imagens/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__caixa {
+   
+    margin: 0 6em;
+    
+}
+
+.container__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container__imagem {
+       margin: 2em 0 3em 0;
+}
+
+.container__botao{
+    background-color: var(--botao-vermelho);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+
+}
+
+.botao__segundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+
+    align-items: center;
+    margin: 0 10em;
+    font-size: 20px;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 0.1em;
+    color: var(--branco-principal);
+}
+
+.descricao__texto {
+    color: var(--cinza-segundario);
+    text-align: justify;
+}
+
+.secundario__botao{ 
+    display: inline-block;
+    margin: 1em 0;
+
+}
+
+
+.container__descricao {
+    padding: 0.5em;
+}
+
+.imagem2 {
+    margin: 0 10em;
+}
+
+
+.dispositivos__lista {
+    display: flex;
+}
